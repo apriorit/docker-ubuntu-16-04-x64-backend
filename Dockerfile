@@ -1,6 +1,10 @@
 #Source image - Ubuntu 16.04
 FROM ubuntu:16.04
 
+#Install common soft
+RUN apt-get update && apt-get install -y \
+	git
+
 #Install Node.js related soft
 RUN apt-get update && apt-get install -y \
 	nodejs-legacy \
